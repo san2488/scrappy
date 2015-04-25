@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js" type="text/javascript"></script>
+    <script src="scrapbook.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                    <span>Scrapbook</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="john@example.com">
+                <label for="name">Email address</label>
+                <input class="form-control" id="name" placeholder="John Doe">
+                <label for="message">Message</label>
+                <textarea class="form-control" rows="3" id="message" placeholder="Leave a message"></textarea>
+                <button type="button" class="btn btn-primary" id="submit">Submit</button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="search">Email address</label>
+                <input type="search" class="form-control" id="search" placeholder="Search anything">
+            </div>
+        </div>
+        <table class="table table-hover" id="scraps">
+            <thead>
+                <tr><th>#</th><th>Name</th><th>Email</th><th>Message</th><th>Posted at</th></tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
